@@ -1,0 +1,50 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.10/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preImperativeDebugBuild UP-TO-DATE
+> Task :app:mergeImperativeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateImperativeDebugResValues
+> Task :app:dataBindingMergeDependencyArtifactsImperativeDebug
+> Task :app:generateImperativeDebugResources
+> Task :app:packageImperativeDebugResources
+> Task :app:mapImperativeDebugSourceSetPaths
+> Task :app:checkImperativeDebugAarMetadata
+> Task :app:createImperativeDebugCompatibleScreenManifests
+> Task :app:parseImperativeDebugLocalResources
+> Task :app:extractDeepLinksImperativeDebug
+> Task :app:processImperativeDebugMainManifest
+> Task :app:mergeImperativeDebugResources
+> Task :app:processImperativeDebugManifest
+> Task :app:dataBindingGenBaseClassesImperativeDebug
+> Task :app:processImperativeDebugManifestForPackage
+> Task :app:javaPreCompileImperativeDebug
+> Task :app:mergeImperativeDebugShaders
+> Task :app:compileImperativeDebugShaders NO-SOURCE
+> Task :app:generateImperativeDebugAssets UP-TO-DATE
+> Task :app:mergeImperativeDebugAssets
+> Task :app:compressImperativeDebugAssets
+> Task :app:desugarImperativeDebugFileDependencies
+> Task :app:mergeImperativeDebugJniLibFolders
+> Task :app:checkImperativeDebugDuplicateClasses
+> Task :app:mergeImperativeDebugNativeLibs NO-SOURCE
+> Task :app:stripImperativeDebugDebugSymbols NO-SOURCE
+> Task :app:mergeLibDexImperativeDebug
+> Task :app:validateSigningImperativeDebug
+> Task :app:writeImperativeDebugAppMetadata
+> Task :app:writeImperativeDebugSigningConfigVersions
+> Task :app:processImperativeDebugResources
+> Task :app:mergeExtDexImperativeDebug
+> Task :app:compileImperativeDebugKotlin
+> Task :app:compileImperativeDebugJavaWithJavac
+> Task :app:dexBuilderImperativeDebug
+> Task :app:mergeImperativeDebugGlobalSynthetics
+> Task :app:processImperativeDebugJavaRes
+> Task :app:mergeProjectDexImperativeDebug
+> Task :app:mergeImperativeDebugJavaResource
+> Task :app:packageImperativeDebug
+> Task :app:createImperativeDebugApkListingFileRedirect
+> Task :app:assembleImperativeDebug
+
+BUILD SUCCESSFUL in 14s
+36 actionable tasks: 36 executed

@@ -73,6 +73,7 @@ android {
 dependencies {
     // Shared
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.compose.runtime)
 
     // Imperative only
     "imperativeImplementation"(libs.androidx.appcompat)
@@ -86,5 +87,4 @@ dependencies {
     "declarativeImplementation"(libs.androidx.ui.graphics)
     "declarativeImplementation"(libs.androidx.ui.tooling.preview)
     "declarativeImplementation"(libs.androidx.material3)
-    debugImplementation(libs.androidx.ui.tooling)
 }

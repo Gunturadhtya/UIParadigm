@@ -16,10 +16,10 @@ androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview"
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 androidx-ui = { group = "androidx.compose.ui", name = "ui" }
-androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version = "1.7.5" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
