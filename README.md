@@ -11,7 +11,7 @@ A controlled experiment measuring the practical differences between imperative a
 | Property                 | Detail                                |
 | ------------------------ | ------------------------------------- |
 | **Host OS**              | NixOS 25.11                           |
-| **Container**            | Distrobox — Arch Linux                |
+| **Container**            | Distrobox + Arch Linux                |
 | **JDK**                  | OpenJDK 21                            |
 | **Android SDK**          | API 35, Build Tools 35.0.0            |
 | **Storage**              | Direct bind-mount (max I/O)           |
@@ -109,27 +109,6 @@ Each dynamic metric was measured after a `adb shell am force-stop` to guarantee 
 | **Cold Start** | 477 ms     | 622 ms      | Declarative +30% |
 | **Peak RAM**   | 131.9 MB   | 121.4 MB    | Declarative −8%  |
 | **Peak CPU**   | 10%        | 6%          | Declarative −40% |
-
----
-
-## Analysis
-
-**Code complexity** favours Declarative — 14% fewer lines with no separate XML layout files, and data transformation expressed more concisely through functional operators compared to manual for-loops.
-
-**APK size** favours Imperative — Compose ships its own UI toolkit (~2 MB overhead) whereas the XML path relies on system-level views already present on the device.
-
-**Cold Start** favours Imperative — Compose's initial composition phase adds overhead at startup (622 ms vs 477 ms), a known characteristic of Compose on first render.
-
-**Runtime efficiency** (RAM + CPU) favours Declarative — once running, Compose's reactive model consumes less memory and CPU than an active RecyclerView with its ViewHolder binding cycle. Peak RAM was 8% lower and CPU load was 40% lower during steady-state rendering.
-
----
-
-## Key Takeaway
-
-There is no universally superior paradigm. The choice involves real trade-offs:
-
-- Choose **Imperative (XML)** when cold start time and APK size are critical constraints — e.g. lightweight utility apps on low-end devices.
-- Choose **Declarative (Compose)** when developer velocity, code maintainability, and runtime CPU/RAM efficiency matter more — e.g. feature-rich apps with complex, dynamic UIs.
 
 ---
 
