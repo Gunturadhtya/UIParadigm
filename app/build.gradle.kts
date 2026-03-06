@@ -36,13 +36,23 @@ android {
         viewBinding = true
     }
 
-    // ─── Source Sets ───────────────────────────────────────────────
-    sourceSets {
-        getByName("main") {
-            java.srcDirs("src/main/java")
-            manifest.srcFile("src/main/AndroidManifest.xml")
-        }
-    }
+    // Source Set
+    //sourceSets {
+    //    getByName("main") {
+     //       java.srcDirs("src/main/java")
+       //     manifest.srcFile("src/main/AndroidManifest.xml")
+       // }
+    	//getByName("imperative") {
+       	 //   java.srcDirs("src/imperative/java")
+          //  res.srcDirs("src/imperative/res")
+           // manifest.srcFile("src/imperative/AndroidManifest.xml")
+       // }
+       // getByName("declarative") {
+        //   java.srcDirs("src/declarative/java")
+        //   res.srcDirs("src/declarative/res")
+      	 //  manifest.srcFile("src/declarative/AndroidManifest.xml")
+      // }
+   // }
 
     // Build variants: one for each paradigm
     flavorDimensions += "paradigm"
